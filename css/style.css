@@ -118,16 +118,6 @@ h2{
 
 	background-image:  linear-gradient(90deg, #dd813b 0%, #3f5199 100%);
 }
-
-.bt:hover{
-	background-image: none;
-	background-color: #FFF;
-
-	border: 2px solid transparent;
-	border-radius: 20px;
-	border-image: linear-gradient(90deg, #dd813b 0%, #3f5199 100%);
-	border-image-slice: 1;
-}
 /*HEADER//////////////////////////////////////////////*/
 header{
 	display: block;
