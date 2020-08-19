@@ -418,3 +418,546 @@ h1{
 	margin-right: auto;
 	margin-top: 5%;
 }
+
+
+/*services_we_provide///////////////////////////////////*/
+.services_we_provide{
+	background-color: #f3f3f3;
+	background-image: url(../img/block_services_we_provide/backg_img.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: 42%;
+
+	margin-top: 3.8%;
+
+	padding-bottom: 3.9%;
+}
+
+.services_we_provide_box{display: flex; width: 100%;}
+
+.content_box{
+	width: 50%;
+
+	margin-top: 7%;
+}
+
+
+.h2_services_we_provide{
+	line-height: 6rem;
+	
+	margin-left: 2%;
+}
+
+.services_we_provide_p{
+	line-height: 3rem;
+	color: #040404;
+	font-weight: 300;
+	font-size: 1.8rem;
+
+	width: 75%;
+
+	margin-top: 4%;
+	margin-left: 1%;
+}
+
+.services_we_provide_button{
+	margin-top: 2.6%;
+	margin-left: 1%;
+}
+
+.logos{
+	width: 30.2%;
+	height: 150%;
+
+	margin-top: 7.7%;
+
+	background-image: linear-gradient(135deg, #dd813b 0%, #3f5199 100%);
+
+	border-radius: 10px;
+
+	display: flex;
+	flex-wrap: wrap;
+
+	align-items: flex-end;
+}
+
+.logos_little{
+	width: 43%;
+
+	text-align: center;
+
+	padding-top: 5%;
+	padding-bottom: 5%;
+
+}
+
+.logos_little_p{
+	font-size: 1.7rem;
+	letter-spacing: 0px;
+	color: #FFF;
+	font-weight: 800;
+	
+	width: 70%;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.logos .logos_little:nth-child(-n+2){margin-top: 6%;}
+
+.logos .logos_little:nth-child(odd){
+	border-right: 1.5px rgba(255, 255, 255, 0.342) dotted;
+
+	margin-left: 7%;
+}
+
+.logos .logos_little:nth-child(-n+4){
+	border-bottom: 1.5px rgb(255, 255, 255, 0.342) dotted;
+}
+
+.logos .logos_little:nth-child(n+3):nth-child(-n+4){
+	padding-bottom: 9%;
+}
+
+.logos .logos_little:nth-child(n+5):nth-child(-n+6){
+	margin-bottom: 8%;
+
+	padding-top: 7%;
+}
+
+
+/*we_are_perfect_team//////////////////////////*/
+.we_are_perfect_team{
+	margin-top: 4.3%;
+
+	text-align: center;
+
+	position: relative;
+}
+
+.we_are_perfect_team::before{
+	content: '';
+	display: block;
+
+	background-color: rgba(0, 255, 255, 0.514);
+
+	width: 1296px;
+	height: 317px;
+
+	position: absolute;
+
+	left: 50%;
+	bottom: 0;
+	
+	margin-left: -648px;
+
+	z-index: 0;
+
+}
+
+.p_we_are_perfect_team{
+	font-size: 1.8rem;
+	letter-spacing: 0px;
+	line-height: 3rem;
+	color: #313131;
+	font-weight: 300;
+
+	margin-top: 2%;
+	margin-left: auto;
+	margin-right: auto;
+
+	width: 99%;
+}
+
+.box_team{
+	display: flex;
+	justify-content: space-between;
+
+	margin-top: 6%;
+	margin-bottom: 5%;
+
+	position: relative;
+	z-index: 5;
+}
+
+.box_team_little{
+	width: 19%;
+	
+	border-radius: 10px;
+}
+
+.img_box{
+	border-radius: 10px;
+
+	width: 100%;
+
+	overflow: hidden;
+}
+
+.img_box_team_little{
+	width: 120%;
+}
+
+.team_name{
+	font-size: 2.5rem;
+	letter-spacing: 0.1rem;
+	color: #333332;
+	font-weight: 600;
+
+	margin-top: 19%;
+}
+
+.p_box_little{
+	font-size: 2rem;
+	letter-spacing: 0.1rem;
+	line-height: 3rem;
+	color: #a3a3a3;
+	font-weight: 300;
+}
+
+/*anita_allen///////////////////////////////*/
+.anita_allen{
+	margin-top: 3.5%;
+
+	position: relative;
+}
+
+.h2_anita_allen{
+	font-size: 6.5rem;
+
+	margin-top: 2.5%;
+	margin-left: 1.2%;
+}
+
+.after_h2{
+	font-size: 2.2rem;
+	letter-spacing: 0.1rem;
+	line-height: 3.3rem;
+	color: /*#505050*/ #dd813b;
+	font-weight: 700;
+
+	margin-left: 0.3%;
+	margin-top: -1.8%;
+}
+
+.p_anita_allen{
+	font-size: 1.8rem;
+	letter-spacing: 0rem;
+	line-height: 3rem;
+	color: /*#040404*/ #dd813b;
+	font-weight: 300;
+
+	width: 40%;
+
+	margin-top: 1.7%;
+	margin-bottom: 5.4%;
+}
+
+.title_box_skills_little{
+	font-size: 2.5rem;
+	letter-spacing: 0.1rem;
+	color: #333332;
+	font-weight: 500;
+}
+
+.img_box_skills_little{
+	margin-bottom: 1.5%;
+}
+
+.box_img_anita_allen{
+	width: 52.5%;
+
+	background-image: linear-gradient(135deg, #dd813b 0%, #3f5199 100%);
+
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	display: flex;
+}
+
+.box_p_and_ikons{
+	position: relative;
+}
+
+.p_box_img_anita_allen{
+	font-size: 2.1rem;
+	letter-spacing: 0.1rem;
+	line-height: 3rem;
+	color: #FFF;
+	font-weight: 300;
+
+	width: 70%;
+
+	margin-left: 8%;
+	margin-top: 10%;
+}
+
+.soc_ikons_box_img_anita_allen{
+	display: flex;
+	justify-content: space-between;
+
+	align-items: center;
+
+	width: 38%;
+
+	position: absolute;
+	bottom: 9%;
+	left: 8%;
+
+}
+
+.box_soc_img{
+	background-color: #FFF;
+
+	width: 60px;
+	height: 60px;	
+
+	text-align: center;
+
+	border-radius: 30px;
+
+	padding-top: 15px;
+}
+
+/*take_your_website////////////////////////////////////*/
+.take_your_website{
+	margin-top: 6.6%;
+
+	background-color: #f4f4f4;
+	background-image: url(../img/block_anita_allen/background.png);
+	background-repeat: no-repeat;
+	background-size: 38.4%;
+
+	position: relative;
+}
+
+.box01_take_your_website{
+	width: 35%;
+
+	position: absolute;
+	right: 3.5%;
+	top: 18%;
+}
+
+.h2_take_your_website{
+	width: 50%;
+
+	line-height: 6rem;
+
+	margin-left: 1%;
+	margin-bottom: 3.5%;
+}
+
+.bold,
+.ptake_your_website{
+	font-size: 1.8rem;
+	letter-spacing: 0px;
+	line-height: 3rem;
+	color: #040404;
+	font-weight: 700;
+
+	width: 70%;
+
+	margin-left: 1.5%;
+}
+
+.ptake_your_website{
+	margin-top: 5%;
+	font-weight: 300;
+}
+
+.box02_take_your_website{
+	width: 62%;
+
+	margin-top: 8%;
+	margin-bottom: 8.7%;
+
+	display: flex;
+}
+
+.professional{
+	width: 50%;
+
+	background-color: rgb(255, 255, 255);
+
+	text-align: center;
+}
+
+.h2_professional{
+	margin-top: 12%;
+}
+
+.second_p_box02,
+.second_p_box01{
+	font-size: 2rem;
+	letter-spacing: 0.1rem;
+	line-height: 3rem;
+	color: #333332;
+	font-weight: 700;
+
+	margin-top: -3%;
+	margin-bottom: 12%;
+}
+
+.lit-title_professional{
+	font-size: 2.5rem;
+	letter-spacing: 0.1rem;
+	color: #333332;
+	font-weight: 700;
+
+	margin-top: 10.5%;
+}
+
+.p_professional{
+	font-size: 1.8rem;
+	letter-spacing: 0rem;
+	line-height: 3rem;
+	color: #040404;
+	font-weight: 300;
+
+	width: 80%;
+
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 3%;
+	margin-bottom: 23%;
+}
+
+.our_best{
+	background-image: linear-gradient(135deg, #dd813b 0%, #3f5199 100%);
+
+	padding-top: 13.5%;
+
+	text-align: center;
+
+	width: 50%;
+
+	position: relative;
+}
+
+.second_p_box01{
+	color: #FFF;
+	margin-top: 1%;
+}
+
+.ul_our_best{
+	margin-left: 20%;
+	margin-top: -5%;
+}
+
+.li_our_bes{
+	color: #FFF;
+	font-size: 1.6rem;
+	letter-spacing: 0px;
+	font-weight: 400;
+
+	margin-bottom: 6.5%;
+
+	text-align: left;
+}
+
+.li_our_bes::before{
+	content: url(../img/block_take_your_website_to_the_next_level/check.png);
+	
+	margin-right: 5%;
+	position: relative;
+}
+
+.ul_our_best{
+	text-align: center;
+}
+
+
+.aour_best_button{
+	background-image: none;
+	background-color: #FFF;
+
+	color: #020202;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 21%;
+}
+
+
+/*getin_touch//////////////////////////////////////*/
+.getin_touch{
+	padding-top: 4%;
+	padding-bottom: 5%;
+
+	background-image: url(../img/block_soc_ikons/background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.h2_getin_touch{
+	text-align: center;
+}
+
+.box_soc_ikons{
+	display: flex;
+	justify-content: space-between;
+
+	width: 74%;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4%;
+}
+
+
+/*/contacts/////////////////////////////////////////////*/
+.contacts{
+	margin-top: 5%;
+	margin-bottom: 4%;
+}
+
+.box_contact{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.box_contact_little{
+	width: 28%;
+
+	position: relative;
+}
+
+.img_contacts{
+	position: absolute;
+	top: 0;
+}
+
+.contct_tittle{
+	font-size: 1.7rem;
+	letter-spacing: 0rem;
+	line-height: 2.4rem;
+	color: #494949;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-left: 30%;
+}
+
+.a_contacts,
+.contact_addres{
+	font-size: 1.6rem;
+	letter-spacing: 0rem;
+	line-height: 2.4rem;
+	color: #494949;
+	font-weight: 400;
+	text-decoration: none;
+
+	margin-left: 25%;
+}
+
+
+/*FOOTER//////////////////////////////*/
+.p_footer{
+	font-size:1.7rem;
+	letter-spacing: 0rem;
+	line-height: 2.4rem;
+	color: #2f2f2f;
+	font-weight: 400;
+	text-align: center;
+}
