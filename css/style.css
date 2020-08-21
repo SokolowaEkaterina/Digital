@@ -66,6 +66,12 @@ legend {
 html{
 	font-size: 10px;
 }
+@media screen and (max-width:768px){
+	html{
+		font-size: 8.5px;
+	}
+}
+
 
 body{
     position: relative;
@@ -101,7 +107,7 @@ h2{
 .bt{
 	display: block;
 
-	font-size: 16px;
+	font-size: 1.6rem;
 	text-align: center;
 	text-decoration: none;
 	color: #FFF;
@@ -109,10 +115,10 @@ h2{
 	letter-spacing: 0;
 	text-transform: uppercase;
 
-	width: 143px;
-	height: 40px;
+	width: 14.3rem;
+	height: 4rem;
 
-	padding-top: 10px;
+	padding-top: 1rem;
 
 	border-radius: 2rem;
 	border: 1px solid transparent;
@@ -183,6 +189,26 @@ nav{
 	header{
 		padding: 0 5%;
 	}
+	@media screen and (max-width:768px){
+		header{
+			padding: 0 2% 0 1%;
+		}
+	}
+	@media screen and (max-width:426px){
+		header img {
+			margin-top: 5%;
+
+			width: 20%;
+		}
+		header{
+			padding: 0 3%;
+		}
+	}
+	@media screen and (max-width:320px){
+		header img{
+			width: 30%;
+		}
+	}
 }
 /*showcase/////////////////////////////////////////////*/
 .showcase{
@@ -211,7 +237,7 @@ h1{
 }
 
 .showcase_p{
-	width: 60.5rem;
+	width: 55%;
 
 	margin-left: auto;
 	margin-right: auto;
@@ -312,6 +338,61 @@ h1{
 	}
 	.first_box_little{
 		width: 30%;
+		height: 370px;
+	}
+	@media screen and (max-width:768px){
+		.first_b_l_p{
+			width: 90%;
+		}
+		.first_box_little{
+			height: 290px;
+		}
+	}
+	@media screen and (max-width:426px){
+		h1{
+			font-size: 7rem;
+
+			margin-top: 30%;
+		}
+		.showcase{
+			background-size: 220%;
+		}
+		.showcase_p{
+			width: 85%;
+		}
+		.first_box{
+			flex-wrap: wrap;
+
+			margin-top: 10%;
+		}
+		.first_box_little{
+			width: 80%;
+			height: 350px;
+
+			margin-bottom: 15%;
+		}
+		.showcase_button{
+			margin-top: 8%;
+		}
+	}
+	@media screen and (max-width:375px){
+		.showcase{
+			background-size: 250%;
+		}
+		.first_box_little{
+			height: 320px;
+		}
+	}
+	@media screen and (max-width:320px){
+		.showcase{
+			background-size: 270%;
+		}
+		h1{
+			font-size: 6rem;
+		}
+		.first_box_little{
+			height: 310px;
+		}
 	}
 }
 /*we_are_creative_agency//////////////////////////*/
@@ -427,8 +508,64 @@ h1{
 	
 		margin-top: -55%;
 		margin-right: 3%;
+	}
+	@media screen and (max-width:768px){
+		.we_are_creative_agency{
+			overflow: hidden;
+		}
+		.img_we_are_creative_agency{
+			width: 350px;
 	
-		position: relative;
+			top: 10%;
+			left: 90%;
+		}
+		.left_block{
+			width: 90%;
+		}
+		.right_block{
+			width: 80%;
+		
+			margin-top: 10%;
+			margin-right: 10%;
+		}
+		.right_block p:first-child::before{
+			content: '';
+
+			width: 70px;
+			height: 80px;
+
+			background-image: url(../img/block_we_are_creative/quote.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	}
+	@media screen and (max-width:426px){
+		.img_we_are_creative_agency{
+			width: 230px;
+	
+			top: 20%;
+			left: 110%;
+		}
+		.right_block{
+			margin-top: 15%;
+		}
+		.right_block p:first-child::before{
+			width: 40px;
+			height: 45px;
+		}
+		.right_block p:first-child{
+			width: 85%;
+		
+			margin-top: 10%;
+		}
+	}
+	@media screen and (max-width:320px){
+		.img_we_are_creative_agency{
+			width: 210px;
+
+			top: 25%;
+			left: 122%;
+		}
 	}
 }
 /*amazing_features/////////////////////////////////*/
@@ -484,6 +621,23 @@ h1{
 	.amazing_features{
 		background-size: contain;
 	}
+	@media screen and (max-width:426px){
+		.amazing_features{
+			background-size: cover;
+		}
+		.amazing_features_p{
+			width: 92%;
+		}
+		.amazing_features_button{
+			margin-top: 10%;
+			margin-bottom: 6%;
+		}
+	}
+	@media screen and (max-width:375px){
+		.up_block{
+			width: 80%;
+		}
+	}
 }
 /*services_we_provide///////////////////////////////////*/
 .services_we_provide{
@@ -500,6 +654,7 @@ h1{
 
 .services_we_provide_box{
 	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
 }
 
@@ -601,6 +756,29 @@ h1{
 	.logos{
 		width: 37%;
 	}
+	@media screen and (max-width:768px){
+		.services_we_provide_button{
+			margin-top: 7%;
+		}
+	}
+	@media screen and (max-width:426px){
+		.services_we_provide{
+			margin-top: 10%;
+			background-image: none;
+		}
+		.content_box{
+			width: 100%;
+		}
+		.services_we_provide_p{
+			width: 90%;
+		}
+		.logos{
+			width: 80%;
+
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
 }
 /*we_are_perfect_team//////////////////////////*/
 .we_are_perfect_team{
@@ -615,7 +793,7 @@ h1{
 	content: '';
 	display: block;
 
-	background-color: rgba(0, 255, 255, 0.514);
+	background-color: #f4f4f4;
 
 	width: 1296px;
 	height: 317px;
@@ -647,6 +825,7 @@ h1{
 
 .box_team{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 
 	margin-top: 6%;
@@ -713,6 +892,42 @@ h1{
 		}
 		.we_are_perfect_team::before{
 			height: 250px;
+		}
+	}
+	@media screen and (max-width:768px){
+		.p_we_are_perfect_team{
+			width: 90%;
+		}
+		.we_are_perfect_team::before{
+			bottom: 5%;
+			height: 150px;
+		}
+		.team_name{
+			font-size: 2rem;
+		}
+		.p_box_little{
+			font-size: 1.5rem;
+		}
+	}
+	@media screen and (max-width:426px){
+		.we_are_perfect_team{
+			margin-top: 10%;
+		}
+		.box_team_little{
+			width: 40%;
+			margin-top: 10%;
+			background-color: f4f4f4;
+			padding-bottom: 5%;
+		}
+		.team_name{
+			margin-top: 10%;
+			font-size: 2.5rem;
+		}
+		.p_box_little{
+			font-size: 2rem;
+		}
+		.we_are_perfect_team::before{
+			display: none;
 		}
 	}
 }
@@ -847,13 +1062,88 @@ h1{
 			margin-left: 3%;
 		}
 		.box_skilss{
+			width: 60%;
+
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.box_skills_little{
 			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+		}
+		.img_box_skills_little{
+			width: 70%;
+		}
+		.p_box_img_anita_allen{
+			width: 90%;
+		}
+	}
+	@media screen and (max-width:768px){
+		.anita_allen{
+			padding-bottom: 75%;
+		}
+		.h2_anita_allen,
+		.after_h2,
+		.p_anita_allen{
+			width: 90%;
+		}
+		.box_soc_img{
+			width: 45px;	
+			height: 45px;
+
+			padding-top: 0px;
+		}
+		.a_box_soc_img img{
+			width: 35px;
+			
+			margin-top: 13px;
+		}
+		.a_box_soc_img img[src="img/block_anita_allen/soc_ikons/1.png"]{
+			width: 20px;
+
+			margin-top: 10px;
+		}
+		.box_skilss{
+			width: 90%;
+		}
+		.title_box_skills_little{
+			font-size: 2rem;
+		}
+		.box_img_anita_allen{
+			width: 100%;
+			top: auto;
+			bottom: 0;
+		}
+	}
+	@media screen and (max-width:426px){
+		.p_anita_allen{
+			width: 100%;
+		}
+	}
+	@media screen and (max-width:320px){
+		.box_skills_little{
+			display: block;
+		}
+		.box_skilss{
+			width: 90%;
 		}
 		.img_box_skills_little{
 			width: 100%;
+
+			margin-top: 3%;
+			margin-bottom: 5%;
 		}
-		.img_box_skills_little{
-			width: 55%;
+		.anita_allen{
+			padding-bottom: 100%;
+		}
+		.p_box_img_anita_allen{
+			margin-bottom: 60%;
+		}
+		.soc_ikons_box_img_anita_allen{
+			width: 150%;
+			left: 50%;
+			margin-left: -108%;
 		}
 	}
 }
@@ -861,7 +1151,7 @@ h1{
 .take_your_website{
 	margin-top: 6.6%;
 
-	background-color: /*#f4f4f4*/ #dd813b;
+	background-color: #f4f4f4;
 	background-image: url(../img/block_anita_allen/background.png);
 	background-repeat: no-repeat;
 	background-size: 38.4%;
@@ -911,6 +1201,7 @@ h1{
 	margin-bottom: 8.7%;
 
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .professional{
@@ -1001,11 +1292,6 @@ h1{
 	position: relative;
 }
 
-.ul_our_best{
-	text-align: center;
-}
-
-
 .aour_best_button{
 	background-image: none;
 	background-color: #FFF;
@@ -1033,17 +1319,91 @@ h1{
 	@media screen and (max-width:1024px){
 		.take_your_website{
 			background-size: 60%;
-			background-position: -72% 0px;
+			background-position: -75% 0px;
 		}
 		.box02_take_your_website{
 			width: 60%;
 		}
 		.box01_take_your_website{
 			width: 35%;
-		
-			position: absolute;
+
 			right: 3.5%;
 			top: 10%;
+		}
+		.h2_take_your_website,
+		.ptake_your_website,
+		.bold{
+			width: 100%;
+		}
+	}
+	@media screen and (max-width:768px){
+		.professional img{
+			width: 60%;
+		}
+		.p_professional{
+			width: 90%;
+		}
+		.our_best img{
+			width: 60%;
+		}
+		.ul_our_best{
+			margin-left: 10%;
+			margin-top: -5%;
+		}
+	}
+	@media screen and (max-width:426px){
+		.take_your_website{
+			padding-bottom: 110%;
+
+			background-image: none;
+		}
+		.box02_take_your_website{
+			width: 100%;
+
+			margin-top: 0%;
+		}
+		.professional{
+			width: 100%;
+		}
+		.our_best{
+			width: 100%;
+		}
+		.aour_best_button{
+			margin-top: 10%;
+			margin-bottom: 10%;
+		}
+		.box01_take_your_website{
+			width: 100%;
+
+			top: auto;
+			bottom: 2%;
+		}
+		.ul_our_best{
+			margin-left: 15%
+		}
+		.li_our_bes{
+			font-size: 2.5rem;
+		}
+		
+		.h2_take_your_website,
+		.ptake_your_website,
+		.bold{
+			width: 90%;
+			margin-left: auto;
+		}
+
+	}
+	@media screen and (max-width:375px){
+		.take_your_website{
+			padding-bottom: 130%;
+		}
+	}
+	@media screen and (max-width:320px){
+		.take_your_website{
+			padding-bottom: 160%;
+		}
+		.ul_our_best{
+			margin-left: 5%
 		}
 	}
 }
@@ -1065,6 +1425,7 @@ h1{
 
 .box_soc_ikons{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 
 	width: 74%;
@@ -1074,7 +1435,28 @@ h1{
 	margin-top: 4%;
 }
 
+@media screen and (max-width:768px){
+	.box_soc_ikons{
+		width: 100%;
 
+		text-align: center;
+		
+		justify-content: space-around;
+
+		margin-left: none;
+		margin-right: none;
+	}
+	.box_soc_ikons img{
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	@media screen and (max-width:426px){
+		.box_soc_ikons img{
+			margin-bottom: 20%;
+		}
+	}
+}
 /*/contacts/////////////////////////////////////////////*/
 .contacts{
 	margin-top: 5%;
@@ -1083,6 +1465,7 @@ h1{
 
 .box_contact{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
 }
 
@@ -1104,6 +1487,7 @@ h1{
 	color: #494949;
 	font-weight: 700;
 	text-transform: uppercase;
+
 	margin-left: 25%;
 }
 
@@ -1124,6 +1508,41 @@ h1{
 .a_contacts:hover{
 	color: #dd813b;
 }
+
+@media screen and (max-width:768px){
+	.img_contacts{
+		width: 20%;
+	}
+	.img_contacts[src="img/block_contact/2.png"]{
+		width: 15%;
+	}
+	@media screen and (max-width:426px){
+		.contacts{
+			margin-top: 15%;
+		}
+		.box_contact_little{
+			width: 60%;
+
+			margin-bottom: 10%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.a_contacts,
+		.contact_addres{
+			font-size: 2rem;
+			margin-left: 35%;
+		}
+		.contct_tittle{
+			text-align: center;
+
+			margin-left: 0;
+			margin-bottom: 5%;
+		}
+		.img_contacts{
+			left: 0;
+		}
+	}
+}
 /*FOOTER//////////////////////////////*/
 .p_footer{
 	font-size:1.7rem;
@@ -1134,4 +1553,10 @@ h1{
 	text-align: center;
 
 	margin-bottom: 3%;
+}
+
+@media screen and (max-width:768px){
+	footer{
+		margin-top: 5%;
+	}
 }
