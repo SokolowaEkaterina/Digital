@@ -1,10 +1,8 @@
 $(document).ready(function(){
-    const menuToggle = document.querySelector('#menu_togle');
-    const mobileNavContainer = document.querySelector('#mobile-nav');
 
-
-    menuToggle.onclick = function(){
-    menuToggle.classList.toggle('menu-icon-active');
-    mobileNavContainer.classList.toggle('mobile-nav--active'); 
-}
+    $('#menu_togle').on('click', function(){
+        $('#menu_togle').toggleClass('menu-icon-active');
+        $('#mobile-nav').slideToggle();
+    });
+    
 });

@@ -66,7 +66,7 @@ legend {
 html{
 	font-size: 10px;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:843px){
 	html{
 		font-size: 8.5px;
 	}
@@ -185,16 +185,16 @@ nav{
 }
 
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1063px){
 	header{
 		padding: 0 5%;
 	}
-	@media screen and (max-width:768px){
+	@media screen and (max-width:910px){
 		header{
 			padding: 0 2% 0 1%;
 		}
 	}
-	@media screen and (max-width:426px){
+	@media screen and (max-width:717px){
 		header img {
 			margin-top: 5%;
 
@@ -289,6 +289,8 @@ h1{
 	border-radius: 10px;
 
 	box-shadow: 1px 10px 50px 5px rgba(146, 146, 146, 0.2);
+
+	position: relative;
 }
 
 .first_b_l_IMG{
@@ -323,13 +325,30 @@ h1{
 }
 
 .first_b_l_button{
-	margin-top: 8.5%;
-	margin-left: auto;
-	margin-right: auto;
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	margin-left: -7.15rem;
 }
 
+@media screen and (max-width:1400px){
+	.showcase{
+		background-size: 110%;
+	}
+	@media screen and (max-width:1300px){
+		.showcase{
+			background-size: 120%;
+		}
+	}
+	@media screen and (max-width:1200px){
+		.showcase{
+			background-size: 130%;
+		}
+	}	
+}	
 
-@media screen and (max-width:1024px){
+
+@media screen and (max-width:1110px){
 	h1{
 		font-size: 8rem;
 	}
@@ -348,6 +367,52 @@ h1{
 			height: 290px;
 		}
 	}
+	@media screen and (max-width:740px){
+		.showcase{
+			background-size: 140%;
+		}
+	}
+	@media screen and (max-width:630px){
+		.showcase{
+			background-size: 160%;
+		}
+		.first_box{
+			flex-wrap: wrap;
+
+			margin-top: 10%;
+		}
+		.first_box_little{
+			width: 80%;
+			height: 425px;
+
+			margin-bottom: 15%;
+		}
+		.showcase_button{
+			margin-top: 8%;
+		}
+	}
+	@media screen and (max-width:600px){
+		.showcase{
+			background-size: 180%;
+		}
+		.first_box_little{
+			height: 400px;
+		}
+	}
+	@media screen and (max-width:550px){
+		.showcase{
+			background-size: 190%;
+		}
+		.first_box_little{
+			height: 380px;
+		}
+	}
+	
+	@media screen and (max-width:474px){
+		.showcase{
+			background-size: 205%;
+		}
+	}
 	@media screen and (max-width:426px){
 		h1{
 			font-size: 7rem;
@@ -360,19 +425,8 @@ h1{
 		.showcase_p{
 			width: 85%;
 		}
-		.first_box{
-			flex-wrap: wrap;
-
-			margin-top: 10%;
-		}
 		.first_box_little{
-			width: 80%;
-			height: 350px;
-
-			margin-bottom: 15%;
-		}
-		.showcase_button{
-			margin-top: 8%;
+			height: 330px;
 		}
 	}
 	@media screen and (max-width:375px){
@@ -380,7 +434,7 @@ h1{
 			background-size: 250%;
 		}
 		.first_box_little{
-			height: 320px;
+			height: 310px;
 		}
 	}
 	@media screen and (max-width:320px){
@@ -490,7 +544,7 @@ h1{
 }
 
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1070px){
 	.img_we_are_creative_agency{
 		width: 350px;
 	
@@ -506,15 +560,23 @@ h1{
 	.right_block{
 		width: 42%;
 	
-		margin-top: -55%;
+		margin-top: -50%;
 		margin-right: 3%;
 	}
-	@media screen and (max-width:768px){
+	@media screen and (max-width:964px){
+		.right_block{
+			margin-top: -60%;
+		}
+		.left_block{
+			width: 37%;
+		}
+	}
+	@media screen and (max-width:940px){
 		.we_are_creative_agency{
 			overflow: hidden;
 		}
 		.img_we_are_creative_agency{
-			width: 350px;
+			width: 340px;
 	
 			top: 10%;
 			left: 90%;
@@ -539,7 +601,8 @@ h1{
 			background-size: cover;
 		}
 	}
-	@media screen and (max-width:426px){
+
+	@media screen and (max-width:520px){
 		.img_we_are_creative_agency{
 			width: 230px;
 	
@@ -559,7 +622,7 @@ h1{
 			margin-top: 10%;
 		}
 	}
-	@media screen and (max-width:320px){
+	@media screen and (max-width:369px){
 		.img_we_are_creative_agency{
 			width: 210px;
 
@@ -621,9 +684,14 @@ h1{
 	.amazing_features{
 		background-size: contain;
 	}
-	@media screen and (max-width:426px){
+	@media screen and (max-width:610px){
 		.amazing_features{
 			background-size: cover;
+		}
+	}
+	@media screen and (max-width:426px){
+		.up_block{
+			width: 80%;
 		}
 		.amazing_features_p{
 			width: 92%;
@@ -631,11 +699,6 @@ h1{
 		.amazing_features_button{
 			margin-top: 10%;
 			margin-bottom: 6%;
-		}
-	}
-	@media screen and (max-width:375px){
-		.up_block{
-			width: 80%;
 		}
 	}
 }
@@ -760,8 +823,14 @@ h1{
 		.services_we_provide_button{
 			margin-top: 7%;
 		}
+		.content_box{
+			width: 60%;
+		}
+		.services_we_provide_p{
+			width: 90%;
+		}
 	}
-	@media screen and (max-width:426px){
+	@media screen and (max-width:570px){
 		.services_we_provide{
 			margin-top: 10%;
 			background-image: none;
@@ -1049,7 +1118,7 @@ h1{
 			left: 5%;
 		}
 	}
-	@media screen and (max-width:1024px){
+	@media screen and (max-width:1200px){
 		.box_img_anita_allen{
 			width: 55%;
 		}
@@ -1066,6 +1135,7 @@ h1{
 
 			margin-left: auto;
 			margin-right: auto;
+			margin-top: 10%;
 		}
 		.box_skills_little{
 			display: flex;
@@ -1121,7 +1191,7 @@ h1{
 			width: 100%;
 		}
 	}
-	@media screen and (max-width:320px){
+	@media screen and (max-width:340px){
 		.box_skills_little{
 			display: block;
 		}
@@ -1138,7 +1208,7 @@ h1{
 			padding-bottom: 100%;
 		}
 		.p_box_img_anita_allen{
-			margin-bottom: 60%;
+			margin-bottom: 70%;
 		}
 		.soc_ikons_box_img_anita_allen{
 			width: 150%;
@@ -1303,6 +1373,21 @@ h1{
 	margin-top: 21%;
 }
 
+@media screen and (max-width:2560px){
+	.take_your_website{
+		background-size: 41.3%;
+	}
+	@media screen and (max-width:2350px){
+		.take_your_website{
+			background-size: 40.6%;
+		}
+	}
+	@media screen and (max-width:1920px){
+		.take_your_website{
+			background-size: 38.4%;
+		}
+	}
+}
 
 @media screen and (max-width:1440px){
 	.take_your_website{
@@ -1316,9 +1401,9 @@ h1{
 		right: 3.5%;
 		top: 10%;
 	}
-	@media screen and (max-width:1024px){
+	@media screen and (max-width:1273px){
 		.take_your_website{
-			background-size: 60%;
+			background-size: 61%;
 			background-position: -75% 0px;
 		}
 		.box02_take_your_website{
@@ -1334,6 +1419,25 @@ h1{
 		.ptake_your_website,
 		.bold{
 			width: 100%;
+		}
+		.ul_our_best{
+			margin-left: 12%;
+			margin-top: -5%;
+		}
+	}
+	@media screen and (max-width:1140px){
+		.take_your_website{
+			background-size: 60%;
+			background-position: -75% 0px;
+		}
+	}
+	@media screen and (max-width:870px){
+		.take_your_website{
+			background-size: 70%;
+			background-position: -133% 0px;
+		}
+		.ul_our_best{
+			margin-left: 6%;
 		}
 	}
 	@media screen and (max-width:768px){
@@ -1351,16 +1455,18 @@ h1{
 			margin-top: -5%;
 		}
 	}
-	@media screen and (max-width:426px){
+	@media screen and (max-width:732px){
 		.take_your_website{
-			padding-bottom: 110%;
+			padding-bottom: 50%;
 
 			background-image: none;
 		}
 		.box02_take_your_website{
-			width: 100%;
+			width: 70%;
 
 			margin-top: 0%;
+			margin-left: auto;
+			margin-right: auto;
 		}
 		.professional{
 			width: 100%;
@@ -1393,12 +1499,49 @@ h1{
 		}
 
 	}
+	@media screen and (max-width:575px){
+		.take_your_website{
+			padding-bottom: 70%;
+		}
+		.box02_take_your_website{
+			width: 80%;
+		}
+	}
+	@media screen and (max-width:520px){
+		.take_your_website{
+			padding-bottom: 80%;
+		}
+		.box02_take_your_website{
+			width: 85%;
+		}
+	}
+	@media screen and (max-width:477px){
+		.take_your_website{
+			padding-bottom: 90%;
+		}
+		.box02_take_your_website{
+			width: 90%;
+		}
+	}
+	@media screen and (max-width:426px){
+		.take_your_website{
+			padding-bottom: 100%;
+		}
+		.box02_take_your_website{
+			width: 100%;
+		}
+	}
+	@media screen and (max-width:402px){
+		.take_your_website{
+			padding-bottom: 120%;
+		}
+	}
 	@media screen and (max-width:375px){
 		.take_your_website{
 			padding-bottom: 130%;
 		}
 	}
-	@media screen and (max-width:320px){
+	@media screen and (max-width:345px){
 		.take_your_website{
 			padding-bottom: 160%;
 		}
@@ -1435,7 +1578,7 @@ h1{
 	margin-top: 4%;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:810px){
 	.box_soc_ikons{
 		width: 100%;
 
@@ -1451,7 +1594,7 @@ h1{
 		margin-left: auto;
 		margin-right: auto;
 	}
-	@media screen and (max-width:426px){
+	@media screen and (max-width:598px){
 		.box_soc_ikons img{
 			margin-bottom: 20%;
 		}
@@ -1516,7 +1659,7 @@ h1{
 	.img_contacts[src="img/block_contact/2.png"]{
 		width: 15%;
 	}
-	@media screen and (max-width:426px){
+	@media screen and (max-width:556px){
 		.contacts{
 			margin-top: 15%;
 		}
