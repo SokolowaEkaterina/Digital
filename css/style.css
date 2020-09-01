@@ -81,17 +81,22 @@ body{
 	font-family: 'Lato';
 }
 
-/*.backg_img{
+.backg_img{
 	background-image: url(../Creative\ Agency\ Website\ Template\ PSD.jpg);
 	background-repeat: no-repeat;
 	background-position: top center;
-}*/
+}
 
 .container{
 	max-width: 1170px;
 	margin: 0 auto;
 	overflow: hidden;
 }
+.container_01{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
 
 h1,
 h2{
@@ -121,9 +126,10 @@ h2{
 	padding-top: 1rem;
 
 	border-radius: 2rem;
-	border: 1px solid transparent;
 
 	background-image:  linear-gradient(90deg, #dd813b 0%, #3f5199 100%);
+	background-repeat: no-repeat;
+	background-size: cover;
 
 	transition: background-image .5s, background-color .5s, color .5s, border .5s;
 }
@@ -134,11 +140,14 @@ h2{
 
 	color: #3f5199;
 
-	border: 1px solid #3f5199;
+	box-shadow: 0px 0px 0px 1px rgba(63, 81, 153, 0.6) inset;
 }
 /*HEADER//////////////////////////////////////////////*/
 header{
-	display: block;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
 	position: absolute;
 	width: 100%;
 	padding: 0 12% 0 11%;
@@ -147,7 +156,8 @@ header{
 header img {
 	margin-top: 1.6%;
 
-	width: 10%;
+	/*width: 10%;*/
+	width: 150px;
 }
 
 nav{
@@ -184,11 +194,14 @@ nav{
 	border-bottom: 1.5px solid #FFF;
 }
 
-
-@media screen and (max-width:1063px){
+@media screen and (max-width:1520px){
 	header{
-		padding: 0 5%;
+		padding: 0 2%;
 	}
+	header img{
+		width: 100px;
+	}
+}
 	@media screen and (max-width:910px){
 		header{
 			padding: 0 2% 0 1%;
@@ -197,25 +210,16 @@ nav{
 	@media screen and (max-width:717px){
 		header img {
 			margin-top: 5%;
-
-			width: 20%;
-		}
-		header{
-			padding: 0 3%;
 		}
 	}
-	@media screen and (max-width:320px){
-		header img{
-			width: 30%;
-		}
-	}
-}
 /*showcase/////////////////////////////////////////////*/
 .showcase{
 	background-image: url(../img/header_showcase/showcase_img.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: top center;
+
+	padding-top: 9.5%;
 
 	/*opacity: 70%;*/
 
@@ -227,7 +231,7 @@ h1{
 	font-size: 11.1rem;
 	letter-spacing: -0.6rem;
 
-	margin-top: 15.5%;
+	/*margin-top: 15.5%;*/
 }
 
 .h1_under{
@@ -252,6 +256,8 @@ h1{
 .showcase_button{
 	background-image: none;
 	background-color: #FFF;
+
+	border: 1px solid transparent;
 
 	color: #020202;
 
@@ -288,7 +294,7 @@ h1{
 
 	border-radius: 10px;
 
-	box-shadow: 1px 10px 50px 5px rgba(146, 146, 146, 0.2);
+	box-shadow: 0px 10px 100px -20px /*rgba(146, 146, 146, 0.2)*/ #dd813b;
 
 	position: relative;
 }
@@ -346,9 +352,7 @@ h1{
 		}
 	}	
 }	
-
-
-@media screen and (max-width:1110px){
+@media screen and (max-width:1139px){
 	h1{
 		font-size: 8rem;
 	}
@@ -543,7 +547,14 @@ h1{
 	margin-top: 5.4%;
 }
 
-
+@media screen and (max-width:1190px){
+	.left_block{
+		margin-left: 3%;
+	}
+	.right_block{
+		margin-right: 3%;
+	}
+}
 @media screen and (max-width:1070px){
 	.img_we_are_creative_agency{
 		width: 350px;
@@ -554,8 +565,6 @@ h1{
 	}
 	.left_block{
 		width: 40%;
-
-		margin-left: 3%;
 	}
 	.right_block{
 		width: 42%;
@@ -811,7 +820,46 @@ h1{
 	padding-top: 7%;
 }
 
-
+@media screen and (max-width:1535px){
+	.services_we_provide{
+		background-size:contain;
+	}
+	@media screen and (max-width:1440px){
+		.services_we_provide{
+			background-position: 110%;
+		}
+	}
+	@media screen and (max-width:1275px){
+		.services_we_provide{
+			background-position: 120%;
+		}
+	}
+	@media screen and (max-width:1170px){
+		.services_we_provide{
+			background-position: 130%;
+		}
+	}
+	@media screen and (max-width:1065px){
+		.services_we_provide{
+			background-position: 140%;
+		}
+	}
+	@media screen and (max-width:1025px){
+		.services_we_provide{
+			background-position: 155%;
+		}
+	}
+	@media screen and (max-width:1000px){
+		.services_we_provide{
+			background-position: 165%;
+		}
+	}
+	@media screen and (max-width:950px){
+		.services_we_provide{
+			background-position: 175%;
+		}
+	}
+}
 @media screen and (max-width:1024px){
 	.content_box{
 		margin-left: 3%;
@@ -819,7 +867,7 @@ h1{
 	.logos{
 		width: 37%;
 	}
-	@media screen and (max-width:768px){
+	@media screen and (max-width:915px){
 		.services_we_provide_button{
 			margin-top: 7%;
 		}
@@ -828,6 +876,9 @@ h1{
 		}
 		.services_we_provide_p{
 			width: 90%;
+		}
+		.services_we_provide{
+			background-image: none;
 		}
 	}
 	@media screen and (max-width:570px){
@@ -1106,8 +1157,21 @@ h1{
 	border-radius: 30px;
 
 	padding-top: 15px;
+
+	cursor: pointer;
+
+	transition: background-color .3s;
+}
+.box_soc_img:hover img{
+	transition: filter .3s;
+}
+.box_soc_img:hover{
+	background-color: #252525;
 }
 
+.box_soc_img:hover img{
+	filter: invert(150%);
+}
 @media screen and (max-width:1760px){
 	.soc_ikons_box_img_anita_allen{
 		width: 55%;
@@ -1578,6 +1642,33 @@ h1{
 	margin-top: 4%;
 }
 
+.a_box_soc_ikons{
+	background-color: none;
+
+	display: block;
+
+	border-radius: 50%;
+	border: 3.3px solid #FFF;
+
+	width: 84px;
+	height: 85px;
+
+	text-align: center;
+
+	padding-top: 23px;
+
+	transition: background-color .2s;
+}
+.a_box_soc_ikons img{
+	transition: filter .3s;
+}
+
+.a_box_soc_ikons:hover{
+	background-color: #FFF;
+}
+.a_box_soc_ikons:hover img{
+	filter: invert(80%);
+}
 @media screen and (max-width:810px){
 	.box_soc_ikons{
 		width: 100%;
