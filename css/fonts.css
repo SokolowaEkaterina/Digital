@@ -67,3 +67,12 @@
 	font-weight: 300;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'MYRIADPRO';
+	src: url('../fonts/myriad_pro/MYRIADPRO-BOLDCOND.eot');
+	src: url('../fonts/myriad_pro/MYRIADPRO-BOLDCOND.ttf') format('truetype'),
+		 url('../fonts/myriad_pro/MYRIADPRO-BOLDCOND.svg') format('svg');
+	font-weight: 800;
+	font-style: normal;
+}
