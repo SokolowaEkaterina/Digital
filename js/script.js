@@ -5,4 +5,13 @@ $(document).ready(function(){
         $('#mobile-nav').slideToggle();
     });
     
+    $('.slider').slick({
+        arrows:false,
+        slidesToShow: 5,
+    });
+
+    $('.slider_information').slick({
+        arrows:false,
+        slidesToShow:1,
+    });
 });
