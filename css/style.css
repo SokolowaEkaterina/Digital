@@ -61,6 +61,7 @@ legend {
 /*////////////////////////////////*/
 *{
 	box-sizing: border-box;
+	outline: none;
 }
 
 html{
@@ -919,7 +920,7 @@ h1{
 	content: '';
 	display: block;
 
-	background-color: /*#f4f4f4*/ #3f5199;
+	background-color: #f4f4f4;
 
 	width: 1296px;
 	height: 317px;
@@ -948,22 +949,41 @@ h1{
 
 	width: 99%;
 }
+/*SLIDER////////////////////////////////////////*/
+.slick-arrow{
+	border: none;
 
-/*.box_team{
+	background:none;
 
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	font-size: 0;
 
-	margin-top: 6%;
-	margin-bottom: 5%;
+	width: 24px;
+	height: 40px;
 
-	position: relative;
-	z-index: 5;
+	background-image: url(../img/block_we_are_perfect_team/arrow.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	position: absolute;
+	bottom: -50px;
+
+	z-index: 20;
+
+	outline: none;
+
+	cursor: pointer;
+	
+}
+.slick-arrow.slick-prev{
+	left: 40px;
+
+	transform: rotate(180deg);
+}
+.slick-arrow.slick-next{
+	right: 40px;
 }
 
-*/
-/*SLIDER////////////////////////////////////////*/
 .slick-track{
 	display: flex;
 	flex-wrap: wrap;
@@ -1041,14 +1061,6 @@ h1{
 		.p_we_are_perfect_team{
 			width: 75%;
 		}
-		.box_team{
-			justify-content: space-around;
-			
-			padding: 0 1%;
-		}
-		.box_team_little{
-			width: 17%;
-		}
 		.we_are_perfect_team::before{
 			height: 250px;
 		}
@@ -1068,15 +1080,26 @@ h1{
 			font-size: 1.5rem;
 		}
 	}
+	@media screen and (max-width:691px){
+		.slider_item:hover,
+		.slider_item:focus{
+			margin-top: -1%;
+		}
+		.team_name{
+			margin-top: 12%;
+		}
+		.we_are_perfect_team::before{
+			bottom: 1%;
+		}
+	}
+	@media screen and (max-width:621px){
+		.slick-arrow{
+			bottom: -55px;
+		}
+	}
 	@media screen and (max-width:426px){
 		.we_are_perfect_team{
 			margin-top: 10%;
-		}
-		.box_team_little{
-			width: 40%;
-			margin-top: 10%;
-			background-color: f4f4f4;
-			padding-bottom: 5%;
 		}
 		.team_name{
 			margin-top: 10%;
@@ -1085,16 +1108,44 @@ h1{
 		.p_box_little{
 			font-size: 2rem;
 		}
-		.we_are_perfect_team::before{
-			display: none;
-		}
 	}
 }
 /*anita_allen///////////////////////////////*/
+.slider_information{
+	overflow: hidden;
+}
+
+.slider_information_item{
+	outline: none;
+}
+
 .anita_allen{
-	margin-top: 3.5%;
+	display: flex;
+
+	overflow: hidden;
+
+	/*margin-top: 3.5%;*/
 
 	position: relative;
+}
+
+.box_left_anita_allen{
+	flex: 0 0 100%;
+	display: flex;
+}
+
+.container_02{
+	width: 1210px;
+
+	margin: 0 auto;
+
+	padding: 0 20px 0 20px;
+
+	overflow: hidden;
+}
+
+.box_left_anita_allen_little{
+	width: 38%;
 }
 
 .h2_anita_allen{
@@ -1122,14 +1173,14 @@ h1{
 	color: #040404;
 	font-weight: 300;
 
-	width: 40%;
+	width: 100%;
 
 	margin-top: 1.7%;
 	margin-bottom: 5.4%;
 }
 
 .box_skilss{
-	width: 43%;
+	width: 41%;
 }
 
 .box_skills_little{
@@ -1151,7 +1202,6 @@ h1{
 }
 
 .gradient_line{
-
 	display: block;
 
 	position: absolute;
@@ -1165,7 +1215,6 @@ h1{
 	height: 14px;
 }
 .gray_line{
-
 	display: block;
 
 	position: absolute;
@@ -1188,17 +1237,16 @@ h1{
 }
 
 .box_img_anita_allen{
-	width: 52.5%;
-
-	position: absolute;
-	top: 0;
-	right: 0;
-
 	display: flex;
+	flex: 0 0 52%;
+
+	transform: translate(-100%, 0px);
 }
 
 .IMG_box_img_anita_allen{
 	width: 40%;
+
+	position: relative;
 
 	overflow: hidden;
 }
@@ -1224,10 +1272,10 @@ h1{
 	font-weight: 300;
 
 	width: 70%;
+	height: 10%;
 
 	margin-left: 8%;
 	margin-top: 10%;
-	margin-bottom: 93%;
 }
 
 .soc_ikons_box_img_anita_allen{
@@ -1271,118 +1319,113 @@ h1{
 	filter: invert(150%);
 }
 
-@media screen and (max-width:1760px){
+@media screen and (max-width:1590px){
+	.p_box_img_anita_allen{
+		width: 90%;
+	}
 	.soc_ikons_box_img_anita_allen{
 		width: 55%;
 	}
-	@media screen and (max-width:1440px){
-		.soc_ikons_box_img_anita_allen{
-			width: 90%;
-			left: 5%;
-		}
+	@media screen and (max-width:1359px){
+		.box_img_anita_allen{
+			flex: 0 0 55%;
+		}	
 	}
 	@media screen and (max-width:1200px){
-		.box_img_anita_allen{
-			width: 55%;
-		}
-		.img_anita_alen{
+		.anita_allen{
+			display: block;
 			width: 100%;
 		}
-		.h2_anita_allen,
-		.after_h2,
-		.p_anita_allen{
-			margin-left: 3%;
+		.box_left_anita_allen{
+			width: 100%;
 		}
-		.box_skilss{
-			width: 60%;
-
-			margin-left: auto;
-			margin-right: auto;
-			margin-top: 10%;
-		}
-		.img_box_skills_little{
-			width: 70%;
-		}
-		.p_box_img_anita_allen{
+		.box_left_anita_allen_little{
 			width: 90%;
 		}
+		.box_skilss{
+			width: 70%;
+		}
+		.title_box_skills_little{
+			margin-bottom: 7%;
+		}
+		.box_img_anita_allen{
+			width: 100%;
+			height: 450px;
+
+			margin-top: 3%;
+
+			transform: translate(0%, 0px);
+		}
+		.p_box_img_anita_allen{
+			margin-bottom: 0%;
+			margin-left: 4%;
+		}
+		.soc_ikons_box_img_anita_allen{
+			left: 4%;
+		}
 	}
-	@media screen and (max-width:841px){
-		.title_box_skills_little::before{
-			top: 186%;
+	@media screen and (max-width:835px){
+		.gray_line{
+			top: 184%;
 		}
 	}
 	@media screen and (max-width:768px){
-		.anita_allen{
-			padding-bottom: 75%;
-		}
-		.h2_anita_allen,
-		.after_h2,
-		.p_anita_allen{
+		.soc_ikons_box_img_anita_allen{
 			width: 90%;
-		}
-		.box_soc_img{
-			width: 55px;	
-			height: 55px;
-
-			padding-top: 10px;
-		}
-		.a_box_soc_img img{
-			width: 35px;
-			
-			margin-top: 13px;
-		}
-		.a_box_soc_img img[src="img/block_anita_allen/soc_ikons/1.png"]{
-			width: 20px;
-
-			margin-top: 10px;
 		}
 		.box_skilss{
 			width: 90%;
 		}
-		.title_box_skills_little::before{
-			top: 197%;
-		}
+	}
+	@media screen and (max-width:622px){
 		.title_box_skills_little{
-			font-size: 2rem;
+			margin-bottom: 10%;
+		}
+		.anita_allen{
+			margin-top: 1%;
+		}
+	}
+	@media screen and (max-width:530px){
+		.title_box_skills_little{
+			margin-bottom: 14%;
+		}
+	}
+	@media screen and (max-width:490px){
+		.box_skilss{
+			width: 95%;
 		}
 		.box_img_anita_allen{
-			width: 100%;
-			top: auto;
-			bottom: 0;
-		}
-	}
-	@media screen and (max-width:426px){
-		.p_anita_allen{
-			width: 100%;
-		}
-	}
-	@media screen and (max-width:340px){
-		.box_skills_little{
-			display: block;
-		}
-		.box_skilss{
-			width: 90%;
-		}
-		.img_box_skills_little{
-			width: 100%;
+			display: flex;
+			flex-direction: column;
 
-			margin-top: 3%;
-			margin-bottom: 5%;
+			height: 530px;
 		}
-		.anita_allen{
-			padding-bottom: 110%;
+		.IMG_box_img_anita_allen{
+			width: 100%;
+		}
+		.box_p_and_ikons{
+			width: 100%;
 		}
 		.p_box_img_anita_allen{
-			margin-bottom: 70%;
+			margin-bottom: 25%;
 		}
-		.soc_ikons_box_img_anita_allen{
-			width: 150%;
-
-			left: 50%;
-			bottom: 5%;
-
-			margin-left: -108%;
+	}
+	@media screen and (max-width:425px){
+		.anita_allen{
+			margin-top: 2%;
+		}
+	}
+	@media screen and (max-width:375px){
+		.p_box_img_anita_allen{
+			margin-bottom: 30%;
+		}
+		.title_box_skills_little{
+			margin-bottom: 20%;
+		}
+	}
+	@media screen and (max-width:320px){
+		.anita_allen{
+			margin-top: 3%;
 		}
 	}
 }
@@ -1808,6 +1851,11 @@ h1{
 
 		margin-left: none;
 		margin-right: none;
+
+	}
+	.getin_touch{
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 	@media screen and (max-width:598px){
 		.a_box_soc_ikons{
