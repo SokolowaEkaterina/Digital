@@ -137,7 +137,7 @@
 .mobile-nav a:hover{
 	border-bottom: 1.5px solid #414040;
 }
-@media screen and (max-width:717px){
+@media screen and (max-width:772px){
 	.nav_ul{
         display: none;
     }
