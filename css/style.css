@@ -107,6 +107,8 @@ h2{
 	font-size: 5rem;
 	letter-spacing: -0.4rem;
 	color: #333332;
+
+	padding-top: 1%;
 }
 
 .bt{
@@ -742,33 +744,22 @@ h1{
 	opacity: 70%;
 }
 
+@media screen and (max-width:522px){
+	.h2_amazing_features{
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
 
-@media screen and (max-width:1160px){
-	.amazing_features{
-		background-size: contain;
 	}
-	@media screen and (max-width:610px){
-		.amazing_features{
-			background-size: cover;
-		}
+	.up_block{
+		width: 80%;
 	}
-	@media screen and (max-width:522px){
-		.h2_amazing_features{
-			width: 90%;
-			margin-left: auto;
-			margin-right: auto;
-
-		}
-		.up_block{
-			width: 80%;
-		}
-		.amazing_features_p{
-			width: 90%;
-		}
-		.amazing_features_button{
-			margin-top: 10%;
-			margin-bottom: 6%;
-		}
+	.amazing_features_p{
+		width: 90%;
+	}
+	.amazing_features_button{
+		margin-top: 10%;
+		margin-bottom: 6%;
 	}
 }
 /*services_we_provide///////////////////////////////////*/
