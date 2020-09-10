@@ -82,11 +82,11 @@ body{
 	font-family: 'Lato';
 }
 
-.backg_img{
+/*.backg_img{
 	background-image: url(../Creative\ Agency\ Website\ Template\ PSD.jpg);
 	background-repeat: no-repeat;
 	background-position: top center;
-}
+}*/
 
 .container{
 	max-width: 1170px;
@@ -163,6 +163,8 @@ header img {
 
 nav{
 	margin-top: 2.8%;
+	overflow: hidden;
+	padding-bottom: 1%;
 }
 
 .nav_ul{
@@ -657,7 +659,7 @@ h1{
 /*amazing_features/////////////////////////////////*/
 .amazing_features{
 
-	margin-top: 11.9%;
+	margin-top: 11.4%;
 
 	padding-top: 17.2%;
 	padding-bottom: 17%;
@@ -678,7 +680,7 @@ h1{
 	margin-right: auto;
 
 	padding-top: 1.5%;
-	padding-bottom: 3%;
+	padding-bottom: 2.5%;
 
 	text-align: center;
 
@@ -815,7 +817,7 @@ h1{
 	width: 30.2%;
 	height: 150%;
 
-	margin-top: 7.7%;
+	margin-top: 8%;
 
 	background-image: linear-gradient(135deg, #dd813b 0%, #3f5199 100%);
 
@@ -952,7 +954,7 @@ h1{
 }
 /*we_are_perfect_team//////////////////////////*/
 .we_are_perfect_team{
-	margin-top: 4.3%;
+	margin-top: 3.6%;
 
 	text-align: center;
 
@@ -1032,13 +1034,18 @@ h1{
 	flex-wrap: wrap;
 
 	width: 100%;
+}
 
+.slider{
 	margin-top: 6%;
 	margin-bottom: 5%;
 }
 
+.test{
+	width: 100%;
+}
 .slider_item{
-	width: 19%;
+	/*width: 19%;*/width: 100%;
 
 	padding: 0 0.8%;
 
@@ -1154,6 +1161,8 @@ h1{
 /*anita_allen///////////////////////////////*/
 .slider_information{
 	overflow: hidden;
+
+	margin-top: 4.3%;
 }
 
 .slider_information_item{
@@ -1178,7 +1187,7 @@ h1{
 
 	margin: 0 auto;
 
-	padding: 0 3% 0 3%;
+	padding: 0 1% 0 1%;
 
 	overflow: hidden;
 }
@@ -1190,7 +1199,7 @@ h1{
 .h2_anita_allen{
 	font-size: 6.5rem;
 
-	margin-top: 2.5%;
+	margin-top: 5%;
 	margin-left: 1.2%;
 }
 
@@ -1202,7 +1211,7 @@ h1{
 	font-weight: 700;
 
 	margin-left: 0.3%;
-	margin-top: -1.8%;
+	margin-top: -2%;
 }
 
 .p_anita_allen{
@@ -1220,6 +1229,9 @@ h1{
 
 .box_skilss{
 	width: 41%;
+
+	margin-top: 5.5%;
+	margin-bottom: 7%;
 }
 
 .box_skills_little{
@@ -1277,13 +1289,13 @@ h1{
 
 .box_img_anita_allen{
 	display: flex;
-	flex: 0 0 52%;
+	flex: 0 0 52.5%;
 
 	transform: translate(-100%, 0px);
 }
 
 .IMG_box_img_anita_allen{
-	width: 40%;
+	width: 44%;
 
 	position: relative;
 
@@ -1328,7 +1340,6 @@ h1{
 	position: absolute;
 	bottom: 9%;
 	left: 8%;
-
 }
 
 .box_soc_img{
@@ -1482,6 +1493,8 @@ h1{
 	background-size: 38.4%;
 
 	position: relative;
+
+	padding-bottom: 3%;
 }
 
 .box01_take_your_website{
@@ -1489,7 +1502,7 @@ h1{
 
 	position: absolute;
 	right: 3.5%;
-	top: 18%;
+	top: 16.6%;
 }
 
 .h2_take_your_website{
@@ -1523,7 +1536,7 @@ h1{
 	width: 62%;
 
 	margin-top: 8%;
-	margin-bottom: 8.7%;
+	margin-bottom: 4%;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -1542,15 +1555,23 @@ h1{
 }
 
 .second_p_box02,
-.second_p_box01{
+.second_p_{
 	font-size: 2rem;
 	letter-spacing: 0.1rem;
 	line-height: 3rem;
 	color: #333332;
 	font-weight: 700;
 
-	margin-top: -3%;
-	margin-bottom: 12%;
+	margin-top: -4%;
+	margin-bottom: 3%;
+}
+.second_p_{
+	margin-top: -1%;
+	margin-bottom: 11%;
+
+	color: #FFF;
+
+	font-size: 2.3rem;
 }
 
 .prise,
@@ -1569,7 +1590,7 @@ h1{
 .prise{
 	background: linear-gradient(100deg, #dd813b 35%, #3f5199 70%);
 	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
+	-webkit-text-fill-color: transparent;
 }
 .prise_bigger{
 	font-size: 12rem;
@@ -1581,7 +1602,7 @@ h1{
 	color: #333332;
 	font-weight: 700;
 
-	margin-top: 10.5%;
+	margin-top: 4%;
 }
 
 .p_professional{
@@ -1602,18 +1623,13 @@ h1{
 .our_best{
 	background-image: linear-gradient(135deg, #dd813b 0%, #3f5199 100%);
 
-	padding-top: 13.5%;
+	padding-top: 11%;
 
 	text-align: center;
 
 	width: 50%;
 
 	position: relative;
-}
-
-.second_p_box01{
-	color: #FFF;
-	margin-top: 1%;
 }
 
 .ul_our_best{
@@ -1799,17 +1815,28 @@ h1{
 		.box02_take_your_website{
 			width: 100%;
 		}
-	}
-	@media screen and (max-width:345px){
 		.ul_our_best{
-			margin-left: 5%
+			margin-left: 20%;
+		}
+		.li_our_bes{
+			font-size: 2rem;
+		}
+	}
+	@media screen and (max-width:376px){
+		.ul_our_best{
+			margin-left: 15%;
+		}
+	}
+	@media screen and (max-width:331px){
+		.ul_our_best{
+			margin-left: 10%;
 		}
 	}
 }
 
 /*getin_touch//////////////////////////////////////*/
 .getin_touch{
-	padding-top: 4%;
+	padding-top: 3.2%;
 	padding-bottom: 5%;
 
 	background-image: url(../img/block_soc_ikons/background.png);
@@ -1831,7 +1858,7 @@ h1{
 
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 4%;
+	margin-top: 4.5%;
 }
 
 .a_box_soc_ikons{
